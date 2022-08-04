@@ -1,1 +1,200 @@
+/*CODE BELOW IS THE WEB BACKGROUND*/ 
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0c1330;
+}
+/* CODE BELOW IS THE WINDOW */
+.window {
+    height: 25em;
+    width: 16.8em;
+    background: linear-gradient(
+		#3f006c,
+		#750050,
+		#b10042,
+		#da4837,
+		#f7bb38
+	);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 16.8em;
+    /* TO CHANGE COLORS USE ANIMATION FUNTION, THEN GIVE VARIABLE NAME, AND AFTER THE TIME */
+    animation: colors 12s infinite forwards;
+}
+/* USE KEYFRAME COLORS TO CHANGE CLOLRS ACCORDING TO THE ANIMATION FUNCTION*/
+@keyframes colors {
+    10% {
+		background: linear-gradient(
+		#3f006c,
+		#750050,
+		#b10042,
+		#da4837,
+		#f7bb38
+	);
+	}
+    53% {
+		background: linear-gradient(
+		#14045f,
+		#331a99,
+		#282bce,
+		#1555ec,
+		#1e84f7
+	);
+	}
+    55% {
+		background: linear-gradient(
+		#14045f,
+		#331a99,
+		#282bce,
+		#1555ec,
+		#1e84f7
+	);
+	}
+	98% {
+		background: linear-gradient(
+		#3f006c,
+		#750050,
+		#b10042,
+		#da4837,
+		#f7bb38
+	);
+	}
+	100% {
+		background: linear-gradient(
+		#3f006c,
+		#750050,
+		#b10042,
+		#da4837,
+		#f7bb38
+	);
+    }
+}.obit {
+    height: 28.12em;
+    width: 28.12em;
+    border-radius: 50%;
+    /* USE BORDER-STYLE FUNCTION WITH DOTTED TO SEE THE OBIT*/
+    position: absolute;
+    top: 8.75em;
+    left: -5.62em;
+    animation: spin 12s infinite forwards;
+}
+@keyframes spin {
+	10% {
+		transform: rotate(0deg);
+	}
+	45% {
+		transform: rotate(180deg);
+	}
+	55% {
+		transform: rotate(180deg);
+	}
+	90% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* CODE BELOW IS THE SUN */
+.sun {
+	background-color: #f7f7de;
+	height: 3.75em;
+	width: 3.75em;
+	border-radius: 50%;
+	position: absolute;
+	left: 12.18em;
+	top: -1.87em;
+}.sun:before, 
+.sun:after {
+	position: absolute;
+	content: "";
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
 
+}
+.sun:before {
+	height: 7.5em;
+	width: 7.5em;
+	right: -1.87em;
+	bottom: -1.87em;
+}
+.sun:after {
+	height: 12.5em;
+	width: 12.5em;
+	right: -4.37em;
+	bottom: -4.37em;
+}
+.ray1 {
+	height: 0;
+	width: 0.6em;
+	border-bottom: 10.6em solid rgba(255, 255, 255, 0.1);
+	border-left: 1.8em solid transparent;
+	position: absolute;
+	transform: rotate(130deg);
+	bottom: 0.6em;
+	right: 4em;
+}
+.ray2 {
+	position: absolute;
+	height: 0;
+	width: 0.9em;
+	border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+	border-left: 2.1em solid transparent;
+	border-right: 2.1em solid transparent;
+	transform: rotate(230deg);
+	left: 3.75em;
+	bottom: -0.99em;
+}
+.ray3 {
+	position: absolute;
+	height: 0;
+	width: 0.3em;
+	border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+	border-left: 0.9em solid transparent;
+	border-right: 0.9em solid transparent;
+	transform: rotate(80deg);
+	left: -5.3em;
+	bottom: -5.6em;
+}
+.ray4 {
+	position: absolute;
+	height: 0;
+	width: 0.1em;
+	border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+	transform: rotate(250deg);
+	left: 5.5em;
+	bottom: -5.6em;
+}
+.moon {
+	height: 3.75em;
+	width: 3.75em;
+	box-shadow: 1.25em -1.25em 0 0 #f7f7de;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -3.1em;
+	left: 10.93em;
+}
+.moon:before,
+.moon:after {
+	position: absolute;
+	content: "";
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+.moon:before {
+	height: 6.25em;
+	width: 6.25em;
+	right: -2.5em;
+	bottom: 0em;
+}
+.moon:after {
+	height: 11.8em;
+	width: 11.8em;
+	left: -2.8em;
+	bottom: -2.8em;
+}
