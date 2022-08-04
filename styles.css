@@ -20,6 +20,7 @@ body {
     top: 50%;
     left: 50%;
     z-index: 1;
+	overflow: hidden;
     border-radius: 16.8em;
     /* TO CHANGE COLORS USE ANIMATION FUNTION, THEN GIVE VARIABLE NAME, AND AFTER THE TIME */
     animation: colors 12s infinite forwards;
@@ -74,9 +75,11 @@ body {
 }.obit {
     height: 28.12em;
     width: 28.12em;
-    border-radius: 50%;
+	/*border: 1px solid white;*/
+    border: 1px solid white;
+	border-radius: 50%;
     /* USE BORDER-STYLE FUNCTION WITH DOTTED TO SEE THE OBIT*/
-    position: absolute;
+	position: absolute;
     top: 8.75em;
     left: -5.62em;
     animation: spin 12s infinite forwards;
@@ -166,8 +169,8 @@ body {
 	border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
 	border-left: 0.5em solid transparent;
 	border-right: 0.5em solid transparent;
-	transform: rotate(250deg);
-	left: 5.5em;
+	transform: rotate(120deg);
+	left: -5.5em;
 	bottom: -5.6em;
 }
 .moon {
@@ -176,8 +179,9 @@ body {
 	box-shadow: 1.25em -1.25em 0 0 #f7f7de;
 	border-radius: 50%;
 	position: absolute;
-	bottom: -3.1em;
-	left: 10.93em;
+	bottom: -9.9em;
+	left: -1.93em;
+	top: 30em;
 }
 .moon:before,
 .moon:after {
@@ -197,4 +201,14 @@ body {
 	width: 11.8em;
 	left: -2.8em;
 	bottom: -2.8em;
+}
+.stars {
+	height: 0.15em;
+	width: 0.15em;
+	background-color: #f7f7de;
+	position: absolute;
+	top: 3.7em;
+	left: 9.3em;
+	border-radius: 50%;
+	box-shadow: 3em 9.3em #ffffff, -1.8em 11.2em #ffffff, ;
 }
